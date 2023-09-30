@@ -1,7 +1,23 @@
 # OpenLayer-GIS Test
 This is testing for layer create with OpenLayer
 
+# With docker-compose method - easy way
+
+#### Build
+```
+docker-compose up -d
+```
+
+### Rebuild - If any change in docker file
+```
+docker-compose up -d --build
+```
+
+
 # Trying to Ready Environment
+## Docker method only for container based development
+Need to enter the contaner shell and then work under the container, best practice because, if change any localfolder under container shell not sync and if change under container shell the local dir not sync or notify.
+It's just for checking or practice purpose. Otherwise use the docker-compose method.
 
 ### node install with docker
 docker build -t <docker image name> <path>
